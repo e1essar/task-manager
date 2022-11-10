@@ -1,0 +1,23 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+  "description": "custom task manager",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e1essar/task-manager.git"
+  },
+  "author": "e1essar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e1essar/task-manager/issues"
+  },
+  "homepage": "https://github.com/e1essar/task-manager#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
