@@ -18,6 +18,13 @@
   },
   "homepage": "https://github.com/e1essar/task-manager#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "sequelize": "^6.25.7",
+    "swagger-ui-express": "^4.6.0"
   }
 }

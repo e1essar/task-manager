@@ -1,13 +1,17 @@
 module.exports = (sequelize, Sequelize) => {
     const Task = sequelize.define("tasks", {
+      idTask: {
+        type: Sequelize.INTEGER,
+        primaryKey: true
+      },
       type: {
-        type: Sequelize.STRING
+        type: Sequelize.ENUM("issue", "story", "bug")
       },
       status: {
-        type: Sequelize.STRING
+        type: Sequelize.ENUM("in process", "to do", "done")
       },
       weight: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER
       },
       time: {
         type: Sequelize.STRING
@@ -25,9 +29,9 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING
       },
       createdAt: {
-        type: Sequelize.STRING
+        type: Sequelize.DATE
       }
     });
   
-    return T;
+    return Task;
   };
